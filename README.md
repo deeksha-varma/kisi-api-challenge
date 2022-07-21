@@ -51,8 +51,8 @@ With that ActiveJob would use the pubsueque adapter to enqueue jobs to Google pu
 
  ## Enqueue a Job
  ```ruby
-   HelloJob.perform_later(args) # enqueue the job to pub/sub and execute in the background immediately (after the pub/sub subscriber receives the job).
-    HelloJob.set(wait_until: 10.minutes).perform_later(args) # enqueue the job to pub/sub and execute in 10 minutes.
+  HelloJob.perform_later(args) # enqueue the job to pub/sub and execute in the background immediately (after the pub/sub subscriber receives the job).
+  HelloJob.set(wait_until: 10.minutes).perform_later(args) # enqueue the job to pub/sub and execute in 10 minutes.
  ```
 
 ## Testing
